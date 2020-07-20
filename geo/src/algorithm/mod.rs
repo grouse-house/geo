@@ -10,6 +10,8 @@ pub mod centroid;
 pub mod chamberlain_duquette_area;
 /// Calculate the closest `Point` between a `Geometry` and an input `Point`.
 pub mod closest_point;
+/// Calculate the concave hull of a `Geometry`.
+pub mod concave_hull;
 /// Determine whether `Geometry` `A` is completely enclosed by `Geometry` `B`.
 pub mod contains;
 /// Calculate the convex hull of a `Geometry`.
@@ -36,6 +38,10 @@ pub mod haversine_intermediate;
 pub mod haversine_length;
 /// Determine whether `Geometry` `A` intersects `Geometry` `B`.
 pub mod intersects;
+/// Interpolate a point along a `Line` or `LineString`.
+pub mod line_interpolate_point;
+/// Locate a point along a `Line` or `LineString`.
+pub mod line_locate_point;
 /// Apply a function to all `Coordinates` of a `Geometry`.
 pub mod map_coords;
 /// Orient a `Polygon`'s exterior and interior rings.
@@ -59,7 +65,3 @@ pub mod vincenty_distance;
 pub mod vincenty_length;
 /// Calculate and work with the winding order of `Linestring`s.
 pub mod winding_order;
-/// Locate a point along a `Line` or `LineString`.
-pub mod line_locate_point;
-/// Interpolate a point along a `Line` or `LineString`.
-pub mod line_interpolate_point;
